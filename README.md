@@ -1,6 +1,6 @@
-# === UNICHAIN 1.0 ===
+# === UNICHAIN COMBINE 1.0 ===
 
-**UNICHAIN FARMING** — это бот для автоматизации взаимодействия с блокчейном unichain.  
+**UNICHAIN COMBINE** — это бот для автоматизации взаимодействия с блокчейном unichain.  
 
 ## Функционал бота:  
 - [Бридж](https://superbridge.app/unichain-sepolia) ETH из Sepolia в Unichain  
