@@ -5,7 +5,7 @@
 ## Функционал бота:  
 - [Бридж](https://superbridge.app/unichain-sepolia) ETH из Sepolia в Unichain  
 - [Свапы](https://app.uniswap.org/) ETH на WETH и обратно  
-- [Деплой](https://owlto.finance/deploy/?chain=Unichain) контрактов  
+- Деплой контрактов на [Owlto](https://owlto.finance/deploy/?chain=Unichain)  
 - Режим накрутки транзакций  
 
 ## Параметры:  
