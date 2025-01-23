@@ -1,5 +1,7 @@
 # === UNICHAIN 1.0 ===
 
+**UNICHAIN FARMING** — это бот для автоматизации взаимодействия с блокчейном unichain.  
+
 ## Функционал бота:  
 - [Бридж](https://superbridge.app/unichain-sepolia) ETH из Sepolia в Unichain  
 - [Свапы](https://app.uniswap.org/) ETH на WETH и обратно  
@@ -8,11 +10,11 @@
 
 ## Параметры:  
 - Случайные задержки между действиями
-- Случайные объём ETH
+- Случайные объёмы ETH
 - Случайные транзакции
 
 ## Установка:  
-- Устанавливаете `python 3.11.9`  
+- [Устанавливаете](https://www.python.org/downloads/) `python 3.11.9`  
 - Запускаете файл `setup.bat`
 
 ## Запуск:  
