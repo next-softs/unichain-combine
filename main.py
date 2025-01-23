@@ -75,12 +75,3 @@ def main():
 if __name__ == '__main__':
     first_message()
     main()
-
-    accounts_manager = Accounts()
-    accounts_manager.loads_accs()
-    accounts = accounts_manager.accounts
-
-
-
-
-
