@@ -9,7 +9,10 @@ import threading, time, random
 
 from contracts.Bridge import Bridge
 from contracts.Uniswap import Uniswap
+from contracts.MintNft import MintNft
 from contracts.OwltoDeploy import OwltoDeploy
+
+from models.nfts import nft_list
 
 
 def start_bridge(clients):
@@ -46,6 +49,23 @@ def start_random_transactions(clients):
         logger.info(f"ожидаем {s} сек для запуска след. кошелька..")
         time.sleep(s)
 
+def start_mint_nft(accounts):
+    mints = []
+    for account in accounts:
+        for nft in nft_list:
+            mints.append(MintNft(account, nft))
+
+    random.shuffle(mints)
+
+    for mint in mints:
+        if mint.mint():
+            s = random.randint(*delay_actions)
+            logger.info(f"ожидаем {s} сек для запуска след. кошелька..")
+            time.sleep(s)
+
+    logger.success("все nft получены")
+
+
 def main():
     accounts_manager = Accounts()
     accounts_manager.loads_accs()
@@ -55,11 +75,14 @@ def main():
                    "> 2. Wrap/Unwrap\n"
                    "> 3. Деплой на owlto\n"
                    "> 4. Случайные транзакции\n"
+                   "> 5. Минт нфт\n"
                    ">> ")
+
     print("-"*50+"\n")
 
-    clients = [Client(account) for account in accounts]
-    random.shuffle(clients)
+    if action != "5":
+        clients = [Client(account) for account in accounts]
+        random.shuffle(clients)
 
     if action == "1":
         start_bridge(clients)
@@ -69,6 +92,8 @@ def main():
         start_deploy_owlto(clients)
     elif action == "4":
         start_random_transactions(clients)
+    elif action == "5":
+        start_mint_nft(accounts)
     else:
         logger.warning(f"Выбран вариант, которого нет!")
 
