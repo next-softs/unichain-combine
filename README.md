@@ -6,7 +6,8 @@
 - [Бридж](https://superbridge.app/unichain-sepolia) ETH из Sepolia в Unichain  
 - [Свапы](https://app.uniswap.org/) ETH на WETH и обратно  
 - Деплой контрактов на [Owlto](https://owlto.finance/deploy/?chain=Unichain)  
-- Режим накрутки транзакций  
+- Режим накрутки транзакций
+- В случайном порядке минтит эти нфт [1](https://morkie.xyz/alien), [2](https://morkie.xyz/unicorn), [3](https://morkie.xyz/europa), [4](https://nerzo.xyz/unicorn)
 
 ## Параметры:  
 - Случайные задержки между действиями
