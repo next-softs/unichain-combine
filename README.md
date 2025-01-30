@@ -1,4 +1,4 @@
-# === UNICHAIN COMBINE 1.0 ===
+# === UNICHAIN COMBINE 1.1 ===
 
 **UNICHAIN COMBINE** — это бот для автоматизации взаимодействия с блокчейном unichain.  
 
