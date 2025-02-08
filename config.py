@@ -1,6 +1,6 @@
 
 # использовать прокси True/False
-useProxies = True
+useProxies = False
 
 # кол-во символов в дробной части объёмов [от, до]
 precision = [4, 6]
