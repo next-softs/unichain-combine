@@ -1,4 +1,4 @@
-# === UNICHAIN COMBINE 1.0 ===
+# === UNICHAIN COMBINE 1.2 ===
 
 **UNICHAIN COMBINE** — это бот для автоматизации взаимодействия с блокчейном unichain.  
 
@@ -6,12 +6,15 @@
 - [Бридж](https://superbridge.app/unichain-sepolia) ETH из Sepolia в Unichain  
 - [Свапы](https://app.uniswap.org/) ETH на WETH и обратно  
 - Деплой контрактов на [Owlto](https://owlto.finance/deploy/?chain=Unichain)  
-- Режим накрутки транзакций  
+- Режим накрутки транзакций
+- В случайном порядке минтит эти нфт [1,](https://morkie.xyz/alien) [2,](https://morkie.xyz/unicorn) [3,](https://morkie.xyz/europa) [4](https://nerzo.xyz/unicorn)
+- Проверка баланса на кошельках ETH
 
 ## Параметры:  
 - Случайные задержки между действиями
 - Случайные объёмы ETH
 - Случайные транзакции
+- Кол-во одновременно запущенных потоков
 
 ## Установка:  
 - [Устанавливаете](https://www.python.org/downloads/) `python 3.11.9`  
