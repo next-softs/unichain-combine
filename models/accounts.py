@@ -6,6 +6,8 @@ class Account:
         self.private_key = private_key
         self.proxy = proxy
 
+        self.name = f"{self.private_key[:5]}..{self.private_key[-5:]}"
+
 class Accounts:
     def __init__(self):
         self.accounts = []

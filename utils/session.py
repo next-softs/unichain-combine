@@ -4,7 +4,7 @@ from fake_useragent import UserAgent
 
 def headers():
     return {
-        "User-Agent": UserAgent(os='windows').random
+        "User-Agent": UserAgent().random
     }
 
 def create_session(proxy):

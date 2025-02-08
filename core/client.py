@@ -33,7 +33,7 @@ class Client:
 
             if balance_eth + balance_weth >= min_bridge_amount:
                 logger.warning(f"{self.acc_name} в unichain уже есть {round(balance_eth + balance_weth, 6)} ETH, бриджить не будем")
-                return False, False
+                return False, True
 
             balance_eth = float(self.bridge.balance())
             if amount >= balance_eth:
@@ -43,8 +43,7 @@ class Client:
 
                 amount = bridge_amount[0]
 
-            self.bridge.bridge(amount)
-            return True, False
+            return self.bridge.bridge(amount), False
 
         except Exception as err:
             logger.error(f"{self.acc_name} {err}")
@@ -85,19 +84,16 @@ class Client:
         except Exception as err:
             logger.error(f"{self.acc_name} {err}")
 
-    def random_transactions(self):
+    def random_transaction(self):
         actions = ["wrap_unwrap", "deploy"]
         weights = list(weights_transactions.values())
 
-        while True:
-            try:
-                action = random.choices(actions, weights=weights, k=1)[0]
-                if action == "wrap_unwrap":
-                    self.wrap_unwrap()
-                elif action == "deploy":
-                    self.deploy_owlto()
+        try:
+            action = random.choices(actions, weights=weights, k=1)[0]
+            if action == "wrap_unwrap":
+                self.wrap_unwrap()
+            elif action == "deploy":
+                self.deploy_owlto()
 
-            except Exception as err:
-                logger.error(f"{self.acc_name} {err}")
-
-            self.sleep(delay_actions)
+        except Exception as err:
+            logger.error(f"{self.acc_name} {err}")

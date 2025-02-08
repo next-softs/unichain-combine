@@ -44,10 +44,10 @@ class Default:
                 logger.success(f'{self.acc_name} {desc + " " if desc else ""}{data.get("transactionHash").hex()}')
                 return True
             else:
-                logger.error(f'{self.acc_name} {desc + " " if desc else ""}{data.get("transactionHash").hex()}')
+                logger.error(f'{self.address} {desc + " " if desc else ""}{data.get("transactionHash").hex()}')
 
         except Exception as e:
-            logger.error(f'{self.acc_name} {desc + " " if desc else ""}Error: {e}')
+            logger.error(f'{self.address} {desc + " " if desc else ""}Error: {e}')
 
         return False
 

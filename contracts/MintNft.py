@@ -23,3 +23,12 @@ class MintNft(Default):
         }
 
         return self.send_transaction(tx, f"mint {self.nft.title}")
+
+    def balance_nft(self):
+        balance = 0
+        resp = self.session.get(f"https://unichain-sepolia.blockscout.com/api/v2/addresses/{self.address}/tokens?type=ERC-721").json()
+        for item in resp["items"]:
+            if item["token"]["address"] == self.nft.address:
+                balance += 1
+
+        return balance
