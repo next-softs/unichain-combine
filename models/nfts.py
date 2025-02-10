@@ -13,5 +13,6 @@ nft_list = [
     Nft(title="morkie-alien", address="0xAdE5aE3e71ff1E6D1E1e849d18A4DF27189a61be", data=morkie_data),
     Nft(title="morkie-unicorn", address="0x99F4146B950Ec5B8C6Bc1Aa6f6C9b14b6ADc6256", data=morkie_data),
     Nft(title="morkie-europa", address="0x2188DA4AE1CAaFCf2fBFb3ef34227F3FFdc46AB6", data=morkie_data),
-    Nft(title="nerzo-unicorn", address="0xFDE3b685898576Bb263cFE585D9ca49Aa848fC65", data=nerzo_data)
+    Nft(title="nerzo-unicorn", address="0xFDE3b685898576Bb263cFE585D9ca49Aa848fC65", data=nerzo_data),
+    Nft(title="morkie-unicorn2", address="0x68d592B7ebae2Cf80aA911BDD9679E927f3d70Ef", data=morkie_data)
 ]
