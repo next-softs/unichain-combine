@@ -38,7 +38,7 @@ class Client:
             balance_eth = float(self.bridge.balance())
             if amount >= balance_eth:
                 if bridge_amount[0] > balance_eth:
-                    logger.warning(f"{self.acc_name} недостаточно eth для бриджа {amount}ETH")
+                    logger.warning(f"{self.acc_name} недостаточно eth для бриджа {amount}ETH | баланс {round(balance_eth, 6)}ETH")
                     return False, True
 
                 amount = bridge_amount[0]
