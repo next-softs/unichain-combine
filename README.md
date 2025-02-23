@@ -1,4 +1,4 @@
-# === UNICHAIN COMBINE 1.2 ===
+# === UNICHAIN COMBINE TESTNET 1.2 ===
 
 **UNICHAIN COMBINE** — это бот для автоматизации взаимодействия с блокчейном unichain.  
 
